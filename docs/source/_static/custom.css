@@ -1,0 +1,102 @@
+/* Jupyter Notebook style input cell - Vertical layout */
+.cell-input {
+    border: 1px solid #e0e0e0;
+    border-left: 4px solid #083fa1;
+    background-color: #f7f7f7;
+    margin: 0.5em 0; 
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Output cell style - Vertical layout */
+.cell-output {
+    border: 1px solid #e0e0e0;
+    border-left: 4px solid #28a745;
+    background-color: #f8f9fa;
+    margin: 0.5em 0; 
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Numbered row style - Single row */
+.cell-input::before {
+    content: "In [" attr(data-prompt) "]:";
+    display: block; 
+    color: #083fa1;
+    font-weight: bold;
+    font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+    font-size: 0.9em;
+    background-color: #e1e8ff;
+    padding: 8px 12px; 
+    border-bottom: 1px solid #d0d7de; 
+    border-radius: 4px 4px 0 0; 
+}
+
+/* Output style of numbered row */
+.cell-output::before {
+    content: "Out[" attr(data-prompt) "]:";
+    display: block; 
+    color: #28a745;
+    font-weight: bold;
+    font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+    font-size: 0.9em;
+    background-color: #e8f5e8;
+    padding: 8px 12px;
+    border-bottom: 1px solid #d0e0d0;
+    border-radius: 4px 4px 0 0;
+}
+
+/* Code content region */
+.cell-input pre,
+.cell-output pre {
+    margin: 0 !important;
+    padding: 12px !important; 
+    background: transparent !important;
+    border: none !important;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Highlighted container style */
+.cell-input .highlight,
+.cell-output .highlight {
+    background: transparent !important;
+    margin: 0 !important;
+    border: none !important;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 0 0 4px 4px;
+}
+
+/* Code block sliding style */
+.highlight {
+    max-height: 400px;
+    overflow-y: auto;
+    border: none !important; 
+    margin: 0 !important;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.highlight pre {
+    margin: 0 !important;
+    padding: 12px !important;
+}
+
+/* Line number style */
+.highlight .linenos {
+    color: #999;
+    background-color: #f5f5f5;
+    padding: 12px 0.5em !important;
+    border-right: 1px solid #ddd;
+}
+
+/* Special style of the output region */
+div[class^="highlight-none"] {
+    background-color: #f8f8f8;
+    margin: 0 !important;
+    width: 100%;
+    box-sizing: border-box;
+}
