@@ -59,3 +59,12 @@ html_static_path = ['_static']
 html_css_files = [
     'custom.css',
 ]
+
+html_context = {
+    'display_github': True,  
+    'github_user': 'programmerjia',  
+    'github_repo': 'DOMINO-Tutorials',      
+    'github_version': 'main',          
+    'conf_py_path': '/docs/source/',   
+    'edit_page_url_template': 'https://github.com/{github_user}/{github_repo}/edit/{github_version}/docs/source/{path}',
+}
