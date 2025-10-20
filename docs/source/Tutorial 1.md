@@ -135,6 +135,15 @@ AnnData object with n_obs × n_vars = 10710 × 541
 
 </div>
 
+After running the domino model, the following key sections are added to the adata:
+
+* **adata.obs['highly_variable']**: Identified high-variable genes that are filtered during the data preprocessing stage.
+* **adata.obs['graph_neigh']**: Adjacency matrix, used as a mask for pooling operations; ‘graph_diffusion’ represent diffusion view graph.
+* **adata.obs['adj']**: Symmetric adjacency matrix for neighborhood aggregation; ‘adj_diffusion’ represent diffusion view graph.
+* **adata.obs['label_CSL']**: A binary label matrix guides the model to distinguish between positive and negative samples.
+* **adata.obs['feat']**: Original node features.
+* **adata.obs['emb']**: The restructured node features are used for spatial clustering.
+
 ## Spatial clustering
 
 After model training, the learned representations will be saved in adata.obsm[‘emb’]. Then we use the mclust tool for spatial clustering.
