@@ -23,7 +23,9 @@ pip install domino-spatial
 
 Then test whether the domino-spatial package has been installed successfully:
 
-```python
+```bash
+# test the installation
+python
 import domino_spatial
 print(domino_spatial.__version__)   
 ```
