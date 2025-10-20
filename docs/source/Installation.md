@@ -20,3 +20,12 @@ conda activate DOMINO
 
 pip install domino-spatial
 ```
+
+Then test whether the domino-spatial package has been installed successfully:
+
+```python
+import domino_spatial
+print(domino_spatial.__version__)   
+```
+
+If the version number is printed, the installation is successful.
