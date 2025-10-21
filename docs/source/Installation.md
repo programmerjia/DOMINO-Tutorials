@@ -25,9 +25,8 @@ Then test whether the domino-spatial package has been installed successfully:
 
 ```bash
 # test the installation
-python
-import domino_spatial
-print(domino_spatial.__version__)   
+
+domino-spatial --version
 ```
 
-If the version number is printed, the installation is successful.
+If the package name and version number are output, the installation is successful.
