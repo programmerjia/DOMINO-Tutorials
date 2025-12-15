@@ -1,7 +1,7 @@
 # Tutorial 2: Visium
-In this tutorial, we show how to apply DOMINO to identify spatial domains on Visium data. As a example,  we choose the *Human_Breast_Cancer* slice to analyse.
+In this tutorial, we show how to apply DOMINO to identify spatial domains on Visium data. As a example,  we choose the slice named  *Visium_Human_Breast_Cancer.h5ad* to analyse.
 
-Before running the code, please download the input data via https://zenodo.org/records/6925603#.YuM5WXZBwuU
+Before running the code, please download the input data via https://zenodo.org/records/17890634
 
 
 ## Preparation
