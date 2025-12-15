@@ -1,7 +1,7 @@
 # Tutorial 1: Xenium
-In this tutorial, we show how to apply DOMINO to identify spatial domains on Xenium data. As a example,  we choose the *spe_xenium2* slice to analyse.
+In this tutorial, we show how to apply DOMINO to identify spatial domains on Xenium data. As a example,  we choose the slice named *Xenium_BreastCancer.h5ad* to analyse.
 
-Before running the code, please download the input data via https://www.10xgenomics.com/resources/datasets/fresh-frozen-mouse-brain-replicates-1-standard
+Before running the code, please download the input data via https://zenodo.org/records/17890634
 
 
 ## Preparation
